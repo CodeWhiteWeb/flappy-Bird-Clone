@@ -29,10 +29,10 @@ scene("game", () => {
   onKeyPress("space", () => {
     play("wooosh"),
     player.jump(400),
-    player.angle(330)
+    player.angle = 330
   });
   onKeyRelease("space", () => {
-    player.angle(30)
+    player.angle = 30
   });
 
 

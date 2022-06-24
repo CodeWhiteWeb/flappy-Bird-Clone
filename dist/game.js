@@ -2749,11 +2749,10 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       rotate(30)
     ]);
     onKeyPress("space", () => {
-      play("wooosh"), player.jump(400);
-      player.angle(330);
+      play("wooosh"), player.jump(400), player.angle = 330;
     });
     onKeyRelease("space", () => {
-      player.angle(30);
+      player.angle = 30;
     });
     const PIPE_GAP = 120;
     function producePipes() {
